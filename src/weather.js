@@ -5,25 +5,33 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <input
-          type="search"
-          placeholder="Enter a city"
-          className="form-control"
-        />
-        <input type="submit" value="Search" className="btn btn-primary" />
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              placeholder="Enter a city"
+              className="form-control"
+            />
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
+          </div>
+        </div>
       </form>
       <h1>New York</h1>
       <ul>
         <li>Wednesday 07:00</li>
-        <li>Mostly Cloudy</li>
+        <li>Moderate Rain</li>
       </ul>
       <div className="row">
-        <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-            alt="Mostly Cloudy"
-          />
-          6°C
+        <div className="col-6 weather-app-temperature-container">
+          <div className="weather-app-icon">☀️</div>
+          <div className="weather-app-temperature">16</div>
+          <div className="weather-app-unit">°C</div>
         </div>
         <div className="col-6">
           <ul>
