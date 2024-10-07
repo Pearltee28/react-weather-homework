@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherTemperature from "./WeatherTemperature";
 import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
@@ -14,11 +15,7 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6 weather-app-temperature-container">
           <img src={props.data.iconUrl} alt={props.data.description} />
-          <span className="weather-app-temperature">
-            {" "}
-            {Math.round(props.data.temperature)}{" "}
-          </span>
-          <span className="weather-app-unit">°C</span>
+          <WeatherTemperature celsius={props.data.temperature} />
         </div>
         <div className="col-6">
           <ul>

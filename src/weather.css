@@ -47,14 +47,15 @@
 
 .weather-app-temperature {
   color: rgb(49, 48, 48);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 60px;
   position: relative;
-  right: 10px;
 }
 .weather-app-unit {
   font-weight: 500;
   position: relative;
-  margin-top: 6px;
-  font-size: 28px;
+}
+
+.weather-app-unit a {
+  text-decoration: none;
 }
